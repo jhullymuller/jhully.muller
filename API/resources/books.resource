@@ -45,3 +45,26 @@ Listar todos os livros
 
       Log    ${response.status_code}
       Log    ${response.json()}
+
+ Atualizar um livro por ID
+
+    Create Session    livraria    ${BASE_URL}    verify=False
+
+    ${id}=    Set Variable    77
+
+    ${payload}=    Create Dictionary
+    ...    id=${id}
+    ...    title=O Hobbit Atualizado
+    ...    description=Versão revisada do clássico
+    ...    pageCount=320
+    ...    excerpt=Era uma vez um hobbit... e depois mais...
+    ...    publishDate=2025-05-18T00:00:00
+
+    ${response}=    PUT On Session    livraria    ${ENDPOINT}/${id}    json=${payload}    expected_status=200
+
+    Log    ${response.status_code}
+    Log    ${response.json()}
+
+    # Verificações básicas
+    Should Be Equal As Integers    ${response.status_code}    200
+    Should Be Equal    ${response.json()["title"]}    O Hobbit Atualizado

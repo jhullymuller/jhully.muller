@@ -19,7 +19,7 @@
     https://fakerestapi.azurewebsites.net 
 
 - QA Responsavel
-    Conie Menezes
+    Jhully Müller de Souza
 
 - Cronograma
     3 horas

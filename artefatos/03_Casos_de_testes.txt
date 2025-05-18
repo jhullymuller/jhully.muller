@@ -34,3 +34,30 @@ CT006 :: Buscar uma lista de todos os Autor cadastrados
     Dado que faço uma requisição GET para /Authors sem nenhum filtro
     Então o código de resposta deve ser 200
     E uma lista contendo todos os autores cadastrados deve retornar com ID, IDbook, o nome e o sobrenome
+
+
+CT007 :: Adicionar um Livro com sucesso 
+    Dado que envio uma requisição POST para /Books 
+    Quando informo os dados válidos
+    Então o código de resposta deve ser 200
+    E o livro é criado deve ser retornado com ID, Titulo, Descrição, Total de páginas, Descrição, e Data de publicação
+
+
+
+CT008 :: Buscar um Livro por ID 
+    Dado que faço uma requisição GET para /Books por um ID especifico
+    Então o código de resposta deve ser 200
+    E o livro selecionado deve ser retornado com ID, Titulo, Descrição, Total de páginas, Descrição, e Data de publicação
+
+
+CT009 :: Buscar uma lista de todos os Livros cadastrados
+    Dado que faço uma requisição GET para /Books sem nenhum filtro
+    Então o código de resposta deve ser 200
+    E uma lista contendo todos os livros cadastrados deve retornar com ID, Titulo, Descrição, Total de páginas, Descrição, e Data de publicação
+
+
+
+CT010 :: Atualizar um livro por ID
+    Dado que faço uma requisição PUT para /Books por um ID especifico
+    Então o código de resposta deve ser 200
+    E o livro selecionado deve ser atualizado e retornando com as informações atualizadas como Titulo, Descrição, Total de páginas, Descrição, e Data de publicação

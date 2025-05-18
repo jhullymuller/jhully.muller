@@ -5,3 +5,7 @@
     - Salvar na base de dados uma lista de Autores de uma vez
     - Consultar um Autor existente pelo ID
     - Listar todos os Autores
+    - Criar um novo livro
+    - Consultar um livro existente pelo ID
+    - Listar todos os livros
+    - Atualizar livro pelo ID
