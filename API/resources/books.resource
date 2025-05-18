@@ -37,3 +37,11 @@ Buscar um livro por ID
     Should Be Equal As Integers    ${response.status_code}    200
     Dictionary Should Contain Key    ${response.json()}    id
     Should Be Equal As Integers      ${response.json()["id"]}    ${id}
+
+Listar todos os livros
+
+     Create Session    livaria    ${BASE_URL}     verify=False
+     ${response}=    GET On Session    livraria    ${ENDPOINT}/      expected_status=200
+
+      Log    ${response.status_code}
+      Log    ${response.json()}

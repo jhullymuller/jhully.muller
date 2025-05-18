@@ -11,4 +11,5 @@ Resource    ../resources/books.resource
 Adicionar um novo livro
     Adicionar um livro com sucesso
     Buscar um livro por ID
+    Listar todos os livros
     
