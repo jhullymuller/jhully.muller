@@ -1,0 +1,25 @@
+### Plano de Teste " Test Plan" ###
+
+- Objetivo
+   Validar o endpoint Authors da Fake REST API garantindo que as funcionalidades 
+   de CRUD estejam operando conforme o esperado.
+
+- Escopo:
+    Testes de criação e leitura ( POST e GET)
+    Validação de status code e integridade dos dados
+
+- Ferramentas/Librarys:
+    Robot Framework
+    RequestsLibrary
+    JSONLibrary
+    Collections
+    DateTime
+
+- Ambiente:
+    https://fakerestapi.azurewebsites.net 
+
+- QA Responsavel
+    Conie Menezes
+
+- Cronograma
+    3 horas

@@ -1,0 +1,7 @@
+### Suite de Testes "Test Set" ###
+
+- Cenarios de Testes
+    - Criar um novo Autor
+    - Salvar na base de dados uma lista de Autores de uma vez
+    - Consultar um Autor existente pelo ID
+    - Listar todos os Autores

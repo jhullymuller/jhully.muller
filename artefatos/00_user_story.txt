@@ -1,0 +1,29 @@
+### User Story ###
+
+- Authors 
+
+Critérios de Aceitação:
+
+(POST)
+Como um consumidor da API,
+quero cadastrar um novo autor,
+para que ele esteja disponível no sistema.
+
+- A resposta deve retornar HTTP 200 ou 201.
+- O autor criado deve ser retornado com seu ID.
+- No cadastro do autor deve conter o nome e o sobrenome.
+- O id do livro é opicional na criação.
+
+(GET)
+Como um consumidor da API,
+quero obter todos os autores cadastrados,
+para consultar suas informações.
+
+Critérios de Aceitação:
+- A resposta deve retornar HTTP 200.
+- Deve retornar uma lista com todos os autores cadastrado ou apenas 
+    o autor referente ao ID que eu informar, contendo:
+    - ID
+    - IDBook
+    - Nome
+    - Sobrenome

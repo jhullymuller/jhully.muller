@@ -1,0 +1,6 @@
+### Requisitos para o projeto ###
+
+- Instalar dependências -
+pip install robotframework
+pip install robotframework-requests
+pip install robotframework-jsonlibrary

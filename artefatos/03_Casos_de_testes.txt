@@ -1,0 +1,36 @@
+### Casos de Testes "Test Case" ###
+
+Casos de Testes em Gherkin/PT
+
+CT001 :: Adicionar um Autor com sucesso 
+    Dado que envio uma requisição POST para /Authors 
+    Quando informo os dados válidos
+    Então o código de resposta deve ser 200
+    E o autor criado deve ser retornado com ID, IDbook, o nome e o sobrenome
+
+CT002 :: Adicionar mais de um Autor por vez
+    Dado que envio uma requisição POST para /Authors 
+    Quando envio uma lista de autores com todos os dados corretos
+    Então o status code deve retornar 200 ok
+    E o autores criados deves ser retornados com ID, IDbook, o nome e o sobrenome
+
+CT003 :: Buscar um Autor por ID randomico de 1 a 99
+    Dado que faço uma requisição GET para /Authors de forma randomica entre os id 1 a 99
+    Então o código de resposta deve ser 200
+    E o autor selecioando deve ser retornado com ID, IDbook, o nome e o sobrenome
+
+CT004 :: Buscar um Autor por ID randomico de uma lista
+    Dado que faço uma requisição GET para /Authors de forma randomica de uma lista
+    Então o código de resposta deve ser 200
+    E o autor selecioando deve ser retornado com ID, IDbook, o nome e o sobrenome
+
+CT005 :: Buscar um Autor por ID 
+    Dado que faço uma requisição GET para /Authors por um ID especifico
+    Então o código de resposta deve ser 200
+    E o autor selecioando deve ser retornado com ID, IDbook, o nome e o sobrenome
+
+
+CT006 :: Buscar uma lista de todos os Autor cadastrados
+    Dado que faço uma requisição GET para /Authors sem nenhum filtro
+    Então o código de resposta deve ser 200
+    E uma lista contendo todos os autores cadastrados deve retornar com ID, IDbook, o nome e o sobrenome
