@@ -1,6 +1,6 @@
 # 🧪 Projeto de Testes Automatizados – API FakeRest
 
-Este projeto demonstra a automação de testes em API RESTful utilizando a biblioteca **Robot Framework + RequestsLibrary**. A API utilizada para testes é a [FakeRestAPI](https://fakerestapi.azurewebsites.net/index.html), e os testes foram criados para o endpoint`/Authors`.
+Este projeto demonstra a automação de testes em API RESTful utilizando a biblioteca **Robot Framework + RequestsLibrary**. A API utilizada para testes é a [FakeRestAPI](https://fakerestapi.azurewebsites.net/index.html), e os testes foram criados para o endpoints`/Authors` ,`/Books`.
 
 ## 🔧 Tecnologias utilizadas
 
