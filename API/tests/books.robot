@@ -13,3 +13,4 @@ Adicionar um novo livro
     Buscar um livro por ID
     Listar todos os livros
     Atualizar um livro por ID
+    Gerar numero versao do Livro
